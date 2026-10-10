@@ -17,8 +17,14 @@ def create_app(env: str = "development") -> Flask:
 
     # Register blueprints
     from app.routes.health import health_bp
+    from app.routes.explain_error import explain_error_bp
+    from app.routes.mentor import mentor_bp
+    from app.routes.guided_fix import guided_fix_bp
 
     app.register_blueprint(health_bp)
+    app.register_blueprint(explain_error_bp)
+    app.register_blueprint(mentor_bp)
+    app.register_blueprint(guided_fix_bp)
 
     # Global error handlers
     @app.errorhandler(404)

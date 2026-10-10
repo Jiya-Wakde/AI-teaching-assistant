@@ -2,6 +2,7 @@
 Builds system and user prompt strings for each feature.
 Each function returns a (system_prompt, user_prompt) tuple.
 """
+from __future__ import annotations
 
 _SKILL_DESCRIPTORS = {
     "beginner": (

@@ -1,4 +1,6 @@
 """Input validators for all three API endpoints."""
+from __future__ import annotations
+
 from flask import current_app
 
 VALID_LANGUAGES = {

@@ -490,7 +490,7 @@ Gemini Flash models have a generous free tier (verify current limits at https://
 
 ### Sub-Task 1: Project Scaffolding and Environment Setup
 
-**Status:** [ ] pending
+**Status:** [x] done
 
 **Intent:** Create the monorepo skeleton, install base dependencies, and validate the dev environment is functional before writing any feature code.
 
@@ -518,7 +518,7 @@ Gemini Flash models have a generous free tier (verify current limits at https://
 
 ### Sub-Task 2: AI Client and Prompt Engine
 
-**Status:** [ ] pending
+**Status:** [x] done
 
 **Intent:** Build the Gemini-backed AI client and all prompt templates so the LLM integration can be tested in isolation before routes are wired.
 

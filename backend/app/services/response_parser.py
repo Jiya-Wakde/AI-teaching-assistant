@@ -2,6 +2,8 @@
 Parses and validates structured JSON responses from the AI client.
 Raises ParseError with a descriptive message if validation fails.
 """
+from __future__ import annotations
+
 import json
 
 from app.services.ai_client import ParseError

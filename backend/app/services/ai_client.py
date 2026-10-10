@@ -2,8 +2,8 @@
 Gemini AI client.
 Wraps google-generativeai and maps SDK exceptions to typed internal errors.
 """
-import json
 import os
+from typing import Optional
 
 import google.generativeai as genai
 from google.api_core import exceptions as google_exceptions
@@ -77,7 +77,7 @@ class GeminiClient:
 
 
 # Module-level singleton — created lazily on first use so tests can run without a key
-_client: GeminiClient | None = None
+_client: Optional[GeminiClient] = None
 
 
 def get_client() -> GeminiClient:
