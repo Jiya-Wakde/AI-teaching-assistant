@@ -1,0 +1,45 @@
+﻿# ---------------------------------------------------------
+# AI Coding Mentor - root .gitignore
+# ---------------------------------------------------------
+
+# Secrets and environment
+.env
+*.env.local
+*.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+*.whl
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Flask instance folder (contains SQLite db)
+backend/instance/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# IDE / OS
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
